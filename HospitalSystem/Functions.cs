@@ -19,7 +19,7 @@ namespace HospitalSystem
 
         public Functions() 
         {
-            connectionStr = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Alfredo\\source\\repos\\Git\\HospitalSystem\\HospitalSystemDB.mdf;Integrated Security=True;Connect Timeout=30";
+            connectionStr = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Alfredo\\source\\repos\\Git\\HospitalSystem\\HospitalSystemDB.mdf;Integrated Security=True;Connect Timeout=30";
             Con = new SqlConnection(connectionStr);
             Cmd = new SqlCommand();
             Cmd.Connection = Con;

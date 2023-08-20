@@ -63,7 +63,44 @@ namespace HospitalSystem
             }
             else
             {
-                key = Convert.ToInt32(PatientsList.SelectedRows[0].Cells[1].Value.ToString());
+                key = Convert.ToInt32(PatientsList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (PatientNameTB.Text == "" || PatientPhoneTB.Text == "" || PatientAddressTB.Text == "" || GenderCB.SelectedIndex == -1)
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                string patient = PatientNameTB.Text;
+                string gender = GenderCB.SelectedItem.ToString();
+                string birthdate = DOBTB.Value.Date.ToString();
+                string phone = PatientPhoneTB.Text;
+                string address = PatientAddressTB.Text;
+                string Query = "Update PatientTable set PatientName = '{0}',PatientGen = '{1}',PatientDOB = '{2}',PatientPhone = '{3}',PatientAddress = '{4}' where PatientID = {5}";
+                Query = string.Format(Query, patient, gender, birthdate, phone, address, key);
+                Con.SetData(Query);
+                ShowPatients();
+                MessageBox.Show("Patient Updated!");
+            }
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                string Query = "Delete from PatientTable where PatientID = {0}";
+                Query = string.Format(Query, key);
+                Con.SetData(Query);
+                ShowPatients();
+                MessageBox.Show("Patient Deleted!");
             }
         }
     }
