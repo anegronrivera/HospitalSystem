@@ -1,0 +1,17 @@
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\bin\Release\HospitalSystem.exe.config
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\bin\Release\HospitalSystem.exe
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\bin\Release\HospitalSystem.pdb
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\bin\Release\Guna.Charts.WinForms.dll
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\bin\Release\Guna.UI2.dll
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\obj\Release\HospitalSystem.csproj.AssemblyReference.cache
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\obj\Release\HospitalSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\obj\Release\HospitalSystem.Diagnosis.resources
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\obj\Release\HospitalSystem.Login.resources
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\obj\Release\HospitalSystem.Patients.resources
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\obj\Release\HospitalSystem.Properties.Resources.resources
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\obj\Release\HospitalSystem.Tests.resources
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\obj\Release\HospitalSystem.csproj.GenerateResource.cache
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\obj\Release\HospitalSystem.csproj.CoreCompileInputs.cache
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\obj\Release\HospitalSystem.csproj.CopyComplete
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\obj\Release\HospitalSystem.exe
+C:\Users\Alfredo\source\repos\Git\HospitalSystem\HospitalSystem\obj\Release\HospitalSystem.pdb
