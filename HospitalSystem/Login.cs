@@ -31,5 +31,24 @@ namespace HospitalSystem
         {
 
         }
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            if (UsernameTB.Text == "" || PasswordTB.Text == "")
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else if (UsernameTB.Text == "Admin" && PasswordTB.Text == "AdminPassword")
+            {
+                Patients Obj = new Patients();
+                Obj.Show();
+                this.Hide();
+            }
+            else
+            {
+                UsernameTB.Text = "";
+                PasswordTB.Text = "";
+            }
+        }
     }
 }

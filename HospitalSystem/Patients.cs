@@ -43,6 +43,7 @@ namespace HospitalSystem
                 Query = string.Format(Query, patient, gender, birthdate, phone, address);
                 Con.SetData(Query);
                 ShowPatients();
+                Clear();
                 MessageBox.Show("Patient Added!");
             }
         }
@@ -84,15 +85,24 @@ namespace HospitalSystem
                 Query = string.Format(Query, patient, gender, birthdate, phone, address, key);
                 Con.SetData(Query);
                 ShowPatients();
+                Clear();
                 MessageBox.Show("Patient Updated!");
             }
+        }
+
+        private void Clear()
+        {
+            PatientNameTB.Text = "";
+            GenderCB.SelectedIndex = -1;
+            PatientPhoneTB.Text = "";
+            PatientAddressTB.Text = "";
         }
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
             if (key == 0)
             {
-                MessageBox.Show("Missing Data!");
+                MessageBox.Show("Select a Patient!");
             }
             else
             {
@@ -100,8 +110,37 @@ namespace HospitalSystem
                 Query = string.Format(Query, key);
                 Con.SetData(Query);
                 ShowPatients();
+                Clear();
                 MessageBox.Show("Patient Deleted!");
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Patients Obj = new Patients();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Tests Obj = new Tests();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Diagnosis Obj = new Diagnosis();
+            Obj.Show();
+            this.Hide();
         }
     }
 }
